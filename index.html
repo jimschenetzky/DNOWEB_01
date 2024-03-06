@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jose Ims</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://github.com/jimschenetzky/DNOWEB_01/blob/main/FAVICON.png?raw=true">
+  </head>
+  <body>
+    <h1>Uso del Transporte Público Versus Privado en Chile</h1>
+    <div class="container-fluid m-0 p-0">
+      <div class="row row-cols-2 g-0" style="height:100vh">
+        <div class="h-100 bg-danger d-flex align-items-center justify-content-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g id="primera"></g>
+          </svg>
+        </div>
+        <div class="h-100 bg-info d-flex align-items-center justify-content-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g id="segunda"></g>
+          </svg>          
+        </div>
+        <a href="https://www.biobiochile.cl/noticias/nacional/chile/2022/09/08/estudio-de-movilidad-vial-revela-que-solo-un-tercio-de-los-trabajadores-usa-transporte-publico.shtml">Fuente: MUTUAL DE SEGURIDAD</a>
+      </div>
+    </div>
+    <script>
+      const Público = 30;
+      const Privado = 70;
+      /* Público: 30,28% */
+      /* Privado: 69,72% */
+      let cero = document.querySelector("#primera");
+      cero.innerHTML = `<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="0"></circle><text x="15" y="19" font-size="2";> Transporte Público</text>`;
+      let uno = document.querySelector("#segunda");
+      uno.innerHTML = `<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="70 30" stroke-dashoffset="0"></circle><text x="15" y="19" font-size="2";> Transporte Privado</text>`;
+    </script>
+  </body>
+</html>
